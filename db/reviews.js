@@ -21,6 +21,8 @@ async function getReviews(restaurantId) {
     return Array(10).fill(getRandomReview());
 }
 
-async function addReview(restaurantId) {
+async function addReview(restaurantId, review) {
     // do nothing
 }
+
+module.exports = {getAverageScore, getReviews, addReview};

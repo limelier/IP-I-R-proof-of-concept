@@ -11,7 +11,7 @@ router.route('/')
 
 router.route('/:id')
     .get(async (req, res) => {
-        const id = req.params.id;
+        const {id} = req.params;
         const restaurant = await db.getOne(id);
 
         if (!restaurant) {
